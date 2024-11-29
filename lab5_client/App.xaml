@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="lab5_client.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:lab5_client"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources />
+</Application>
