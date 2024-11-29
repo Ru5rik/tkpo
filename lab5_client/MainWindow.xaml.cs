@@ -22,7 +22,7 @@ namespace lab5_client
         private Dictionary<Type, Action> StateToText;
         public ObservableCollection<string> Logs { get; set; } = new();
         public int Level { get; set; } = 1;
-        public int Weight { get; set; } = 1;
+        public int Weight { get; set; } = 50;
 
         public MainWindow()
         {
@@ -47,9 +47,8 @@ namespace lab5_client
         {
             StateToText[elevator.State.GetType()]();
             LevelTB.Text = elevator.CurrentLevel.ToString();
-            WeightTB.Text = elevator.MaxWeight.ToString();
+            WeightTB.Text = elevator.MaxWeight.ToString("0 кг");
             ChanceTB.Text = elevator.BlackoutChance.ToString("P2");
-
         }
 
         private void CallClick(object sender, RoutedEventArgs e)
